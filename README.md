@@ -3,6 +3,13 @@
 
 Custom Actions for working with Stash from SourceTree
 
+## Installation
+
+_TBD_
+
+## Usage
+
+_TBD_
 
 ## LICENSE
 
