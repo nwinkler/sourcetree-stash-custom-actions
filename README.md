@@ -47,7 +47,7 @@ To install the custom actions manually, open the SourceTree preferences (_Source
 	* _Parameters_: "$SHA"
 * Open Stash Commit URL:
 	* _Menu Caption_: "Open Stash Commit URL"
-	* _Script to run_: Point it to the `Stash/open_commit_on_stash.sh` script from this repo
+	* _Script to run_: Point it to the `Stash/open_commit_on_stash_osx.sh` script from this repo
 	* _Parameters_: "$SHA"
 
 ## Usage
