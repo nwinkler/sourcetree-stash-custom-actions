@@ -1,6 +1,4 @@
 # sourcetree-stash-custom-actions
-
-
 Custom Actions for working with Stash from SourceTree.
 
 These are currently only supported on Mac OS X. Windows batch files with similar functionality still need to be created.
@@ -25,18 +23,15 @@ This custom action opens the currently selected commit in your system's default 
 The custom actions currently have the following limitations:
 
 * They only work on Mac OS X. The scripts are written using _Bash_, but make use of some OS-specific functions, e.g. the `pbcopy` command for copying to the system clipboard, or the `open` command for opening a URL in the default web browser.
-* They only work for project repos, not for user repos.
 * They only work for remotes called `origin`.
 * Error handling is only rudimentary. In case of an error in the _Copy Stash Commit URL_ command, the error message is copied to the system clipboard.
 * No automated installation script
 
 
 ## Installation
-
 The first step is to clone this repo to your local machine, then follow the instructions per operating system.
 
 ### Mac OS X
-
 There's no automated way to install these in SourceTree, since the SourceTree configuration for the custom actions is kept in `~/Library/Application Support/SourceTree/actions.plist`.
 
 To install the custom actions manually, open the SourceTree preferences (_SourceTree > Preferences_) and switch to the _Custom Actions_ tab. There, add the following custom commands:
@@ -51,15 +46,12 @@ To install the custom actions manually, open the SourceTree preferences (_Source
 	* _Parameters_: "$SHA"
 
 ## Usage
-
 To use these custom actions after installation, simply select a commit in a project hosted on Stash, right-click on the commit, then open the _Custom Actions_ item from the context menu and select one of the custom actions.
 
 ## To Do
-* Support for user repositories
 * Support for Windows
 * Unit tests
 
 
 ## LICENSE
-
 This projected is licensed under the terms of the MIT license.
