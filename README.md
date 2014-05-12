@@ -71,7 +71,7 @@ For more information on SourceTree's support for _custom actions_, please refer 
 * Support for Windows
 * Unit tests
 
-## Contributions
+## Contributing
 Contributions are always welcome. Simply fork this repo, hack away and create a pull request. The examples in the _Stash_ subdirectory give a good overview of how to handle the Stash URLs.
 
 ## LICENSE
