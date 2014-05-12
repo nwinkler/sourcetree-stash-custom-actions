@@ -19,6 +19,9 @@ This custom action copies the URL of the currently selected commit to the system
 ### Open Stash Commit URL
 This custom action opens the currently selected commit in your system's default web browser.
 
+### Open Project on Stash
+This custom action opens the currently selected project in your system's default web browser.
+
 ## Limitations
 The custom actions currently have the following limitations:
 
@@ -44,14 +47,32 @@ To install the custom actions manually, open the SourceTree preferences (_Source
 	* _Menu Caption_: "Open Stash Commit URL"
 	* _Script to run_: Point it to the `Stash/open_commit_on_stash_osx.sh` script from this repo
 	* _Parameters_: "$SHA"
+* Open Project on Stash:
+	* _Menu Caption_: "Open Project on Stash"
+	* _Script to run_: Point it to the `Stash/open_project_on_stash_osx.sh` script from this repo
+	* _Parameters_: _(leave empty)_
 
 ## Usage
+SourceTree is smart enough to show the appropriate custom actions based on the currently selected context and the expected parameters for the custom action. A custom action that has the _$SHA_ parameter appears when clicking on a commit in the SourceTree UI, etc.
+
 To use these custom actions after installation, simply select a commit in a project hosted on Stash, right-click on the commit, then open the _Custom Actions_ item from the context menu and select one of the custom actions.
+
+The _Open Project on Stash_ is not a commit/hash-based action. A commit's context menu still allows to run this custom action from the _Custom Actions > Repository Actions_ context menu.
+
+The custom actions are also available from the _Actions > Custom Actions_ menu.
+
+## Additional Information
+For more information on SourceTree's support for _custom actions_, please refer to the following:
+
+* http://blog.sourcetreeapp.com/2012/02/08/custom-actions-more-power-to-you/
+* http://blog.sourcetreeapp.com/2013/10/29/sourcetree-for-windows-1-3-released/
 
 ## To Do
 * Support for Windows
 * Unit tests
 
+## Contributions
+Contributions are always welcome. Simply fork this repo, hack away and create a pull request. The examples in the _Stash_ subdirectory give a good overview of how to handle the Stash URLs.
 
 ## LICENSE
 This projected is licensed under the terms of the MIT license.
