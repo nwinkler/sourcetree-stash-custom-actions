@@ -13,6 +13,9 @@ An example:
 
 The custom action scripts in this repo translate the URLs and allow you to go from a local commit directly to the same commit in the web UI.
 
+### Copy Commit Message
+This custom action copies the commit message of the specified commit to the clipboard
+
 ### Copy Stash Commit URL
 This custom action copies the URL of the currently selected commit to the system clipboard, allowing you to paste the URL into an email, a ticket description, or some other place.
 
