@@ -5,6 +5,4 @@
 #
 # SourceTree Parameters: $SHA
 
-set SHA=$1
-
-git log --format=%B -n 1 $SHA |tr '\n' ' '| pbcopy
+git log $1 -1 --format=%B|pbcopy
