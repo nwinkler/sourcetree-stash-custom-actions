@@ -55,7 +55,7 @@ To install the custom actions manually, open the SourceTree preferences (_Source
 	* _Parameters_: _(leave empty)_
 	
 ### Windows
-There's no automated way to install these in SourceTree.
+There's no automated way to install these in SourceTree, since the SourceTree configuration for the custom actions is kept in `%localappdata%\Atlassian\SourceTree\customactions.xml` (tested with SourceTree 3.1.2).
 
 To install the custom actions manually, open the SourceTree options (_Tools > Options_) and switch to the _Custom Actions_ tab. There, add the following custom commands:
 
